@@ -5,41 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunnydale School</title>
     <style>
-        /* 1. Enhance the Page Title */
+        
         h1 {
             font-size: 24px;
             font-weight: bold;
-            color: #1E90FF;
+            color: #556B2F;
         }
 
-        /* 2. Customize Fonts and Section Colors */
+        
         body {
             font-family: 'Arial', sans-serif;
         }
 
-        h2:nth-of-type(1) { /* Target the first h2 (Mission Statement) */
-            color: #32CD32;
+        h2:nth-of-type(1) { 
+            color: #8FA31E;
         }
 
-        h2#upcoming-events { /* Targeting Upcoming Events using ID */
-            color: #FFA07A;
-            background-color: #FFFFE0; /* Apply background color as per instruction 5 */
+        h2#upcoming-events { 
+            color: #8FA31E;
+            background-color: #FFFFE0;
         }
 
-        h2:nth-of-type(3) { /* Target the third h2 (Contact Us) */
-            color: #20B2AA;
+        h2:nth-of-type(3) { 
+            color: #8FA31E;
         }
+        .indoor {
+            background-color: #C6D870;
+            padding: 5px;
+            border: 1px solid #B0E0E6;
 
-        /* 5. Style Specific Sections with IDs and Classes */
+        
         .outdoor {
-            background-color: #AFEEEE;
+            background-color: #C6D870;
             padding: 5px;
             border: 1px solid #B0E0E6;
         }
 
-        /* 7. Add a Box for Contact Info and Make It Look Nice */
+        
         .section {
-            background-color: #f8f3f3;
+            background-color: #EFF5D2;
             padding: 10px;
         }
     </style>
@@ -61,10 +65,21 @@
     <h2>Contact Us</h2>
     <div class="section">
         <p>Email: <a href="mailto:info@sunnydale.edu" title="Click to copy email">info@sunnydale.edu</a></p>
-        <p>Phone: <span title="Click to copy email">555-1234</span></p>
+        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        
+    <h2>If you have any Questions or Message write it here</h2>
+    <form>
+        <label form="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="10" cols="50"></textarea><br><br>
+        <button type="button">Send</button>
+    </form>
         <!-- Imagine clicking here shows a message: 'Thanks for reaching out!' -->
     </div>
-
 </body>
 </html>
+
+
 
